@@ -1,6 +1,8 @@
-function ChatButton() {
+import "./ChatButton.css";
+
+function ChatButton({ toggleChat }) {
     return (
-        <button>
+        <button className="chat-button" onClick={toggleChat}>
             💬
         </button>
     );

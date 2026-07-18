@@ -1,0 +1,54 @@
+.chat-window{
+
+    position:fixed;
+
+    bottom:95px;
+
+    right:25px;
+
+    width:360px;
+
+    height: min(600px, calc(100vh - 120px));
+
+    background:white;
+
+    border-radius:15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+
+    overflow:hidden;
+
+    z-index:999;
+}
+
+.chat-header{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.chat-header button{
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+}

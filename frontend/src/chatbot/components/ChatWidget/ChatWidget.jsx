@@ -1,16 +1,23 @@
 import { useState } from "react";
+
 import ChatButton from "../ChatButton/ChatButton";
 import ChatWindow from "../ChatWindow/ChatWindow";
 
 function ChatWidget() {
 
-    const [open, setOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleChat = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
         <>
-            <ChatButton />
+            <ChatButton toggleChat={toggleChat} />
 
-            {open && <ChatWindow />}
+            {isOpen && (
+                <ChatWindow closeChat={toggleChat} />
+            )}
         </>
     );
 }

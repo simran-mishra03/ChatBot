@@ -1,0 +1,25 @@
+.quick-replies{
+
+    display:flex;
+
+    gap:10px;
+
+    overflow:auto;
+
+    padding:10px;
+
+}
+
+.quick-replies button{
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    border:1px solid #2563eb;
+
+    background:white;
+
+    cursor:pointer;
+
+}

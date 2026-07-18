@@ -1,0 +1,27 @@
+.messages{
+
+    flex:1;
+
+    padding:15px;
+
+    overflow-y:auto;
+
+    background:#f8fafc;
+
+}
+
+.bot-message{
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    width:max-content;
+
+    max-width:80%;
+
+    margin-bottom:10px;
+
+}
